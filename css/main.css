@@ -214,10 +214,10 @@
     font-size: 25px;
     color: #092a5e;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 127%;
     margin-bottom: 14px;
     padding-top: 45px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 90px;
 }
 
 .section-subtitle {
@@ -231,27 +231,13 @@ strong {
     font-weight: 700
 }
 
-.section-content-image--no-margin {
-    margin-bottom: 0
-}
-
 .section-text {
-    margin-bottom: 40px
-}
-.section-text {
-    margin-bottom: 22px
-}
-
-.section-text {
+    margin-bottom: 22px;
     scroll-margin-top: 80px;
 }
 
 .section-text--bold {
     font-weight: 700
-}
-
-.section-text--marginb {
-    margin-bottom: 31px
 }
 
 .text--underline {
@@ -271,59 +257,10 @@ strong {
 
 .section-blue {
     background-color: #e2f3fe;
-    padding: 30px 0;
+    padding: 40px 0;
 }
-
-.section-blue.big-mode {
-    padding: 60px 0;
-}
-
-.section-blue-content {
-    padding: 30px 0 30px;
-    width: 100%;
-    margin-bottom: 45px;
-}
-
-.section-blue-content--title {
-    font-size: 18px;
-    line-height: 1;
-    margin-bottom: 5px;
-}
-.section-blue.big-mode .section-blue-content--title {
-    font-size: 26px;
-    line-height: 28px;
-    margin-bottom: 0;
-    font-weight: 700;
-}
-
-.section-blue-content--inner {
-    padding-left: 64px;
-    max-width: 965px;
-    margin: 0 auto;
-    position: relative
-}
-
-.section-blue.big-mode .section-blue-content--inner {
-    padding-left: 70px;
-    max-width: 100%;
-    margin: 0 0 40px 0;
-}
-
-.section-blue-content--inner::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 45px;
-    height: 45px;
-    background-image: url("../img/info.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.section-blue.big-mode .section-blue-content--inner::before {
-    left: 0;
-    width: 50px;
-    height: 50px;
-    top:-7px;
+.section-blue .section-title {
+    text-align: center;
 }
 
 .container {
@@ -334,10 +271,10 @@ strong {
 .hero {
     height: 310px;
     background-color: #e2f3fe;
-    background-image: url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich.avif");
+    background-image: url("../img/hero.avif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top,right
+    background-position: center;
 }
 
 .container--hero {
@@ -368,41 +305,47 @@ strong {
     color: #fff;
 }
 
-.horizontal-card{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 30px;
-    border-radius: 10px;
-    background: #E2F3FE;
-    margin-bottom: 80px;
-}
-.horizontal-card:last-of-type{
-    margin-bottom: 0;
-}
-.horizontal-card--title{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
-    margin-bottom:5px;
-    margin-top: 0;
-}
-.horizontal-card--img{
-    flex-shrink: 0;
-}
-.horizontal-list {
-    list-style-type: disc;
-    margin: 0;
-    padding-left: 28px;
-}
+
 .column-wrapper{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
+.column-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+.column-image{
+    width: 80px;
+    height: 80px;
+}
+.column-image img{
+    width: 100%;
+}
+.image-custom-mg{
+    margin: 60px 0;
+}
 .column-wrapper .section-text{
     margin-bottom: 0;
+}
+.advantages{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.advantage-item{
+    display: flex;
+    gap:25px;
+    align-items: center;
+}
+.advantage-item--img img{
+    width: 64px;
+    height: 64px;
 }
 
 .nav {
@@ -430,7 +373,17 @@ strong {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+}
+.menu-icon{
+    border-radius: 6px;
+    height: 65px;
+    width: 65px;
+    background: #ffffff;
+    padding: 11px;
+}
+.menu-icon.icon-ticket{
+    padding: 6px;
 }
 
 .nav-list--item {
@@ -455,58 +408,20 @@ strong {
     display: flex;
     align-items: center;
     font-size: 18px;
-    padding: 13px 0;
+    padding: 20px 0;
     letter-spacing: normal;
     font-weight: 400;
-}
-
-.embed {
-    text-align: center;
-    margin-bottom: 60px;
-    margin-top: 40px
-}
-
-.embed-button {
-    background-color: #d40e14;
-    color: #fff;
-    font-weight: 700;
-    border: 0;
-    font-size: 16px;
-    padding: 11px 22px;
-    cursor: pointer;
-    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 32px;
-}
-
-.embed-button:hover,.embed-button:hover:active {
-    background-color: #8c0004
-}
-
-.embed-button:active {
-    background-color: #d40e14;
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px)
-}
-
-.section-text--grey {
-    overflow-wrap: break-word;
-    color: #b9b9b9;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0;
-    margin-bottom: 60px
-}
-.custom-image-margin {
-    margin-bottom: 60px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .swiper {
     width: 100%;
     padding-bottom: 60px !important;
-    max-width: 900px;
     margin:  0 auto;
+}
+.swiper-app{
+    max-width: 715px;
 }
 
 .slider-wrapper {
@@ -518,35 +433,60 @@ strong {
     border-radius: 10px;
     height: auto!important;
 }
-
-.item-slider img, .item-slider picture {
-    border-radius: 10px 10px 0 0;
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+.item-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-
-.item-slider-img {
-    height: 286px;
-}
-
-.item-slider-content {
-    padding: 20px 40px;
-    box-sizing: border-box;
-    display: inline-block;
-}
-
-.content-title {
-    margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 38px;
+.item-app-title{
+    font-size: 20px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
-
-.content-text {
-    margin-bottom: 0;
+.item-app-img{
+    height: 332px;
+}
+.item-app-img img, .item-app-img picture{
+    object-fit: contain;
+    height: 100%;
+}
+.section-review{
+    text-align: center;
+}
+.swiper-review{
+  max-width: 826px;
+}
+.item-review{
+    border-radius: 10px;
+    background: #E2F3FE;
+    padding: 20px;
+    text-align: left;
+}
+.review-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 8px;
+}
+.review-name{
+    font-weight: 700;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.review-info--right{
+    color: #747474;
+    font-weight: 400;
     line-height: 28px;
 }
+
+
+
 
 .footer {
     background-color: #f3f0ec;
@@ -626,9 +566,6 @@ strong {
 }
 .mb-60 {
     margin-bottom: 60px!important;
-}
-.section-bottom{
-    margin-bottom: 40px;
 }
 .scrollup {
     display: -webkit-box;

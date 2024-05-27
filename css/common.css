@@ -126,7 +126,8 @@ img {
     padding: 60px 0;
 }
 .section-gradient{
-    background: #C2E6FA;
+    background: linear-gradient(180deg, rgba(163, 221, 248, 0.80) 0%, rgba(163, 221, 248, 0.45) 50%, rgba(163, 221, 248, 0.80) 100%);
+    padding: 50px 0;
 }
 
 .hidden {

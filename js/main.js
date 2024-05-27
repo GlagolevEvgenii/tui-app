@@ -3,14 +3,37 @@ const embedEngine = {
         embedEngine.binds();
     },
     binds() {
-        const swiper = new Swiper('.swiper', {
+        const swiperApp = new Swiper('.swiper-app', {
             slidesPerView: 1,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next-1',
+                prevEl: '.swiper-button-prev-1',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 110
+                }
+            }
+        });
+        const swiperReview = new Swiper('.swiper-review', {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-2',
+                prevEl: '.swiper-button-prev-2',
             },
             breakpoints: {
                 320: {
