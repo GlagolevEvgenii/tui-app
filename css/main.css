@@ -217,7 +217,7 @@
     line-height: 127%;
     margin-bottom: 14px;
     padding-top: 45px;
-    scroll-margin-top: 90px;
+    scroll-margin-top: 80px;
 }
 
 .section-subtitle {
@@ -257,6 +257,9 @@ strong {
 
 .section-blue {
     background-color: #e2f3fe;
+    padding: 40px 0;
+}
+.section-bottom {
     padding: 40px 0;
 }
 .section-blue .section-title {
@@ -470,7 +473,6 @@ strong {
     justify-content: space-between;
     font-size: 18px;
     font-style: normal;
-    margin-bottom: 8px;
 }
 .review-name{
     font-weight: 700;
@@ -479,10 +481,30 @@ strong {
     margin-bottom: 10px;
     font-size: 18px;
 }
+.review-star{
+    max-width: 119px;
+}
 .review-info--right{
     color: #747474;
     font-weight: 400;
     line-height: 28px;
+}
+.line{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    color:#ffffff;
+    padding: 6px 16px;
+    background: #1A115A;
+    text-align: center;
+}
+.wrap-app{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap-app--img{
+    margin-bottom: 20px;
 }
 
 
