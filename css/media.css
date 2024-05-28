@@ -28,6 +28,12 @@
     .section-content-image--wrapper {
         overflow-x:scroll;
     }
+    .wrap-tabs .content {
+        overflow-x:scroll;
+    }
+    .content-dis{
+        width: 200%;
+    }
 
     .section-content-image--wrapper img {
         width: 200%;
